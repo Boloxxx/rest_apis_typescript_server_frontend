@@ -15,7 +15,7 @@ export async function action({ request }: ActionFunctionArgs) {
 }
 
 export default function Products() {
-  const products = useLoaderData();
+  const products = useLoaderData() as Product[];
 
   return (
     <>
